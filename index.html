@@ -1,0 +1,225 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Монолит — дебетовые и кредитные карты, займы МФО онлайн</title>
+<meta name="description" content="Монолит — витрина предложений банков и МФО: дебетовые и кредитные карты, займы на карту. Коротко об условиях, оформление онлайн на сайте партнёра.">
+<meta name="theme-color" content="#0A0A0A">
+<meta name="color-scheme" content="dark">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="preload" href="fonts/geologica.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="fonts/inter-cyr.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="img/stone/hero.webp" as="image" type="image/webp">
+<link rel="stylesheet" href="css/style.css?v=20261007193333">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Монолит — карты и займы онлайн">
+<meta property="og:description" content="Дебетовые и кредитные карты, займы на карту. Оформление онлайн на сайте партнёра.">
+<meta property="og:image" content="https://daviddavidso.github.io/monolit/img/og.jpg">
+<meta name="twitter:card" content="summary_large_image">
+<script>document.documentElement.classList.add('js');</script>
+</head>
+<body>
+<a class="skip" href="#main">Перейти к основному содержимому</a>
+
+<!-- Иконки интерфейса — Tabler Icons (MIT); знак «Монолит» — свой. -->
+<svg width="0" height="0" class="sprite" aria-hidden="true" focusable="false">
+  <symbol id="i-arrow" viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></symbol>
+  <symbol id="i-search" viewBox="0 0 24 24"><path d="M3 10a7 7 0 1 0 14 0 7 7 0 1 0-14 0M21 21l-6-6"/></symbol>
+  <symbol id="i-pause" viewBox="0 0 24 24"><path d="M6 6a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H7a1 1 0 0 1-1-1zM14 6a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1h-2a1 1 0 0 1-1-1z"/></symbol>
+  <symbol id="i-play" viewBox="0 0 24 24"><path d="M7 4v16l13-8z"/></symbol>
+  <symbol id="i-nfc" viewBox="0 0 40 60"><path d="M6 22 A10 10 0 0 1 6 38M15 14 A20 20 0 0 1 15 46M24 6 A30 30 0 0 1 24 54"/></symbol>
+  <symbol id="i-mono" viewBox="0 0 32 32"><path d="M10.6 26.5 11.9 9.4 16.6 5.2 21.2 8.3 21.9 26.5z" fill="#0A0A0A"/><path d="M16.6 5.2 21.2 8.3 21.9 26.5H17.6L16.4 10.6z" fill="#4A4A48"/><path d="M11.9 9.4 16.6 5.2 16.4 10.6z" fill="#8C8C88"/></symbol>
+</svg>
+
+<header class="hdr" id="hdr">
+  <div class="wrap hdr__in">
+    <a class="logo" href="./">
+      <span class="logo__mark" aria-hidden="true"><svg viewBox="0 0 32 32" focusable="false"><use href="#i-mono"/></svg></span>
+      <span class="logo__word" data-brand>Монолит</span>
+    </a>
+    <nav aria-label="Основное меню">
+      <ul>
+        <li><a href="#cat-debit">Дебетовые</a></li>
+        <li><a href="#cat-credit">Кредитные</a></li>
+        <li><a href="#cat-mfo">Займы</a></li>
+        <li><a href="#how">Как это работает</a></li>
+        <li><a href="#faq">Вопросы</a></li>
+      </ul>
+    </nav>
+    <a class="btn btn--sm hdr__cta" href="#catalog">Подобрать</a>
+  </div>
+  <div class="hdr__progress" id="progress" aria-hidden="true"></div>
+</header>
+
+<main id="main">
+  <section class="hero" aria-labelledby="hero-h">
+    <div class="wrap hero__grid" id="hero">
+      <div class="hero__head">
+        <p class="pill"><i aria-hidden="true"></i><span id="pill" data-tagline>50 предложений банков и МФО</span></p>
+        <h1 id="hero-h">Карты и займы, <em>на которые можно опереться</em></h1>
+      </div>
+
+      <!-- Веер карт на камнях — украшение: скрыт от скринридера, фокуса внутри нет. -->
+      <div class="fan" id="fan" aria-hidden="true">
+        <img class="fan__rock fan__rock--back" src="img/stone/hero.webp" alt="" width="1245" height="748" fetchpriority="high" decoding="async">
+        <div class="fan__stage" id="fan-stage">
+          <div class="bank bank--uralsib" data-slot="0">
+            <div class="bank__face">
+              <div class="bank__top"><img class="bank__logo" src="img/logos/uralsib.png" alt="" width="40" height="40"><span>Уралсиб</span><svg class="bank__nfc" viewBox="0 0 40 60"><use href="#i-nfc"/></svg></div>
+              <div class="bank__chip"></div><div class="bank__num">•••• •••• •••• 7031</div>
+              <div class="bank__bottom"><span>Прибыль</span></div>
+            </div>
+          </div>
+          <div class="bank bank--alfa" data-slot="1">
+            <div class="bank__face">
+              <div class="bank__top"><img class="bank__logo" src="img/logos/alfabank.png" alt="" width="40" height="40"><span>Альфа-Банк</span><svg class="bank__nfc" viewBox="0 0 40 60"><use href="#i-nfc"/></svg></div>
+              <div class="bank__chip"></div><div class="bank__num">•••• •••• •••• 8804</div>
+              <div class="bank__bottom"><span>Альфа-Карта</span></div>
+            </div>
+          </div>
+          <div class="bank bank--t" data-slot="2">
+            <div class="bank__face">
+              <div class="bank__top"><img class="bank__logo" src="img/logos/tbank.png" alt="" width="40" height="40"><span>Т-Банк</span><svg class="bank__nfc" viewBox="0 0 40 60"><use href="#i-nfc"/></svg></div>
+              <div class="bank__chip"></div><div class="bank__num">•••• •••• •••• 1337</div>
+              <div class="bank__bottom"><span>Black</span><span class="bank__mir">МИР</span></div>
+            </div>
+          </div>
+          <div class="bank bank--sber bank--r" data-slot="3">
+            <div class="bank__face">
+              <div class="bank__top"><img class="bank__logo" src="img/logos/sberbank.png" alt="" width="40" height="40"><span>Сбер</span><svg class="bank__nfc" viewBox="0 0 40 60"><use href="#i-nfc"/></svg></div>
+              <div class="bank__chip"></div><div class="bank__num">•••• •••• •••• 2419</div>
+              <div class="bank__bottom"><span>СберКарта</span></div>
+            </div>
+          </div>
+          <div class="bank bank--ozon bank--r" data-slot="4">
+            <div class="bank__face">
+              <div class="bank__top"><img class="bank__logo" src="img/logos/ozon.png" alt="" width="40" height="40"><span>Ozon Банк</span><svg class="bank__nfc" viewBox="0 0 40 60"><use href="#i-nfc"/></svg></div>
+              <div class="bank__chip"></div><div class="bank__num">•••• •••• •••• 5560</div>
+              <div class="bank__bottom"><span>Ozon Карта</span></div>
+            </div>
+          </div>
+        </div>
+        <img class="fan__rock fan__rock--front" src="img/stone/front.webp" alt="" width="878" height="247" decoding="async">
+        <span class="fan__tick fan__tick--tl"></span><span class="fan__tick fan__tick--tr"></span><span class="fan__tick fan__tick--bl"></span><span class="fan__tick fan__tick--br"></span>
+        <span class="fan__hint">Нажмите на карту — она выдвинется</span>
+      </div>
+
+      <div class="hero__body">
+        <p class="hero__lead">Собрали предложения банков и микрофинансовых компаний и коротко пересказали условия. Оформление — онлайн, на сайте партнёра.</p>
+        <div class="hero__cta">
+          <a class="btn" href="#catalog">Смотреть предложения<svg class="ico" aria-hidden="true" focusable="false"><use href="#i-arrow"/></svg></a>
+          <a class="btn btn--ghost" href="#cat-mfo" data-f="mfo">Займы на карту</a>
+        </div>
+        <ul class="hero__facts" id="facts" role="list">
+          <li><b>50</b><span>предложений</span></li>
+          <li><b>36</b><span>компаний</span></li>
+          <li><b>3</b><span>раздела</span></li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section class="partners" aria-labelledby="partners-h">
+    <div class="wrap partners__bar">
+      <h2 class="partners__title" id="partners-h">Банки и МФО на витрине</h2>
+      <button type="button" class="mq-toggle" id="mq-toggle"><svg class="ico" aria-hidden="true" focusable="false"><use href="#i-pause"/></svg><span class="mq-toggle__t">Пауза</span></button>
+    </div>
+    <div class="marquee" id="marquee">
+      <div class="marquee__track" id="marquee-track">
+        <ul class="marquee__list" role="list" aria-label="Партнёры" id="marquee-list"></ul>
+      </div>
+    </div>
+  </section>
+
+  <section class="sec wrap" id="sections-sec" aria-labelledby="sections-h">
+    <div class="sec__head">
+      <p class="idx" aria-hidden="true"><span>01</span>Навигация</p>
+      <h2 id="sections-h">Разделы</h2>
+      <p>Выберите, что нужно, — покажем только эти предложения.</p>
+    </div>
+    <ul class="bento" id="bento" role="list"></ul>
+  </section>
+
+  <section class="how" id="how" aria-labelledby="how-h">
+    <div class="wrap how__grid">
+      <div class="how__head">
+        <p class="idx" aria-hidden="true"><span>02</span>Процесс</p>
+        <h2 id="how-h">Как это работает</h2>
+      </div>
+      <div class="how__txt">
+        <ol class="steps" role="list">
+          <li><span class="steps__n" aria-hidden="true">01</span><div><h3>Выберите раздел</h3><p>Дебетовые карты, кредитные или займы — покажем только нужное.</p></div></li>
+          <li><span class="steps__n" aria-hidden="true">02</span><div><h3>Сравните условия</h3><p>Главное пересказали коротко: кешбэк, льготный период, способ получения.</p></div></li>
+          <li><span class="steps__n" aria-hidden="true">03</span><div><h3>Оформите у партнёра</h3><p>Заявка — на сайте банка или МФО. Решение принимает он, а не витрина.</p></div></li>
+        </ol>
+      </div>
+    </div>
+  </section>
+
+  <section class="catalog" id="catalog" aria-labelledby="catalog-h">
+    <div class="wrap">
+      <div class="sec__head">
+        <p class="idx" aria-hidden="true"><span>03</span>Каталог</p>
+        <h2 id="catalog-h">Предложения</h2>
+        <p>Коротко пересказываем условия. Точные цифры и решение по заявке — на сайте партнёра.</p>
+      </div>
+      <search class="find">
+        <form id="find-form" action="#catalog">
+          <label class="find__label" for="q">Поиск по названию</label>
+          <span class="find__box">
+            <svg class="ico" aria-hidden="true" focusable="false"><use href="#i-search"/></svg>
+            <input type="search" id="q" name="q" autocomplete="off" spellcheck="false" placeholder="Например, Альфа">
+          </span>
+        </form>
+      </search>
+      <div class="filters"><div class="seg" role="group" aria-label="Показать раздел" id="filters"></div></div>
+      <p class="vh" role="status" aria-atomic="true" id="count-status"></p>
+      <p class="vh" role="status" aria-atomic="true" id="cta-status"></p>
+      <div id="sections"><p class="state">Загружаем предложения…</p></div>
+      <div class="empty" id="empty" hidden>
+        <p class="empty__t" id="empty-text"></p>
+        <button type="button" class="btn btn--ghost" id="reset">Сбросить поиск</button>
+      </div>
+    </div>
+  </section>
+
+  <section class="sec wrap faq" id="faq" aria-labelledby="faq-h">
+    <div class="sec__head"><p class="idx" aria-hidden="true"><span>04</span>Ответы</p><h2 id="faq-h">Вопросы</h2></div>
+    <details><summary>Сколько стоит пользоваться витриной?</summary><p>Нисколько. Вы переходите на сайт банка или МФО и оформляете продукт там — на их условиях.</p></details>
+    <details><summary>Кто выдаёт карту или займ?</summary><p>Банк или микрофинансовая компания, чьё предложение вы выбрали. Мы не выдаём кредиты и займы и не принимаем решение по заявке — мы собрали предложения в одном месте.</p></details>
+    <details><summary>Что будет после нажатия «Оформить»?</summary><p>В новой вкладке откроется сайт партнёра. Там вы заполняете заявку, а банк или МФО сообщает решение. Перед отправкой прочитайте условия на сайте партнёра полностью.</p></details>
+    <details><summary>Что значит пометка «Реклама»?</summary><p>Ссылки на витрине рекламные. По закону такие ссылки маркируются, а номер erid показывает, что реклама зарегистрирована.</p></details>
+    <details><summary>Как выбрать займ и не переплатить?</summary><p>Смотрите полную стоимость займа (ПСК) — она указана на сайте МФО. Берите сумму, которую точно вернёте в срок, и не оформляйте несколько займов сразу.</p></details>
+  </section>
+</main>
+
+<footer class="ftr">
+  <div class="wrap">
+    <div class="ftr__top">
+      <a class="logo" href="./">
+        <span class="logo__mark" aria-hidden="true"><svg viewBox="0 0 32 32" focusable="false"><use href="#i-mono"/></svg></span>
+        <span class="logo__word" data-brand>Монолит</span>
+      </a>
+      <nav class="ftr__nav" aria-label="Подвал">
+        <a href="#cat-debit">Дебетовые карты</a>
+        <a href="#cat-credit">Кредитные карты</a>
+        <a href="#cat-mfo">Займы МФО</a>
+        <a href="privacy.html">Политика конфиденциальности</a>
+      </nav>
+    </div>
+    <div class="ftr__legal">
+      <p>Сайт не является банком или микрофинансовой организацией и не выдаёт кредиты и займы. Информация о продуктах носит справочный характер и не является публичной офертой; актуальные условия, ставки и полная стоимость кредита — на сайтах партнёров.</p>
+      <p>Займы выдают МФО, включённые в реестр Банка России. Ссылки на карточках — реклама; за оформление продукта сайт может получать вознаграждение от партнёра.</p>
+      <p><b>Оценивайте свои финансовые возможности и риски.</b></p>
+    </div>
+    <p class="ftr__bottom"><span>© <span id="year">2026</span> <span data-brand-text>Монолит</span></span><span class="ftr__age">18+</span></p>
+  </div>
+  <div class="ftr__word" aria-hidden="true"><span data-brand>Монолит</span></div>
+</footer>
+
+<script>if(typeof OFFERS==="undefined"){document.write('<script src="data.js?t='+Date.now()+'"><\/script>');}</script>
+<script src="js/brands.js?v=20261007193333"></script>
+<script src="js/app.js?v=20261007193333"></script>
+</body>
+</html>
